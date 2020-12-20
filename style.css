@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    outline:none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a{
+    text-decoration: none;
+}
+.card-link{
+    width: 45%;
+    margin: 20px;
+    color: black;
+}
+.card-outer{
+    width: 100%;
+    height: 30vh;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(177, 177, 177, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.full{
+    width: 90%!important;
+}
+.card-outer:hover{
+    box-shadow: 1px 1px 40px rgba(170, 170, 170, 0.25);
+    transform: scale(1.015);
+}
+.card-outer h4{
+    font-size: 25px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 15vh;
+    width: 100%;
+}
+.ham{
+    display: none;
+}
+.logo img{
+    height: 40px;
+    width: auto;
+}
+nav ul{
+    list-style: none;
+
+}
+nav ul li{
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+nav ul li a{
+    color: black;
+    font-weight: 500;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo h1{
+    font-weight: 500;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-holder{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-holder .img-container{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-holder .img-container svg{
+    height: 100%;
+    width: auto;
+}
+.search{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+#search{
+    border: none;
+    box-shadow: 1px 1px 20px rgba(177, 177, 177, 0.25);
+    padding: 15px;
+    padding-left: 25px;
+    border-radius: 50px;
+    width: 100%;
+    background-image: url(assets/img/search.svg);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+#search:focus{
+    outline: none;
+}
+#search::placeholder{
+    color: #C7C7C7;
+}
+.stats #stats{
+    font-size: 100px;
+    color: #4A4A4A;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+}
+.stats{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.subscribe-button button{
+    border: none;
+    padding: 10px;
+    background-color: rgb(255, 34, 34);
+    color: white;
+    margin: 5px;
+    border-radius:10px ;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.subscribe-button button:hover{
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px -3px rgba(250, 24, 24, 0.822);
+    background-color: rgb(209, 27, 27);
+}
+
+.subscribe-button button:focus{
+    outline:none;
+}
+
+.follow-button button{
+    border: none;
+    padding: 10px;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+    margin: 5px;
+    border-radius:10px ;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.follow-button button:hover{
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px -3px rgb(255,105,180);
+    background-color: rgb(255,105,180);
+}
+.follow-button button:focus{
+    outline:none;
+}
+.user-info{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(177, 177, 177, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.inn,.inn-in{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inn{
+    width: 100%;
+    justify-content: space-evenly;
+    height: auto!important;
+}
+
+
+.coming-soon{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.coming-soon h1{
+    font-size: 50px;
+    font-weight: 400;
+    outline:none;
+}
+
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    outline:none;
+}
+.corona{
+    width: 45%;
+    margin: 20px;
+    flex-direction: column;
+    padding: 40px;
+    outline:none;
+    align-items: flex-start;
+}
+.corona:hover{
+    transform: scale(1);
+    outline:none;
+}
+.corona p{
+    color: #FF7272;
+    font-weight: 600;
+    outline:none;
+}
+.corona .green{
+    color: #6DCD77;
+    outline:none;
+}
+.corona h3{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+    outline:none;
+}
+
+.request-form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 60%;
+    outline:none;
+}
+.request-form input{
+    margin-bottom: 20px;
+    outline:none;
+}
+.request-form input, .request-form textarea {
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 20px rgba(177, 177, 177, 0.25);
+    border-radius: 30px;
+    outline: none;
+    outline:none;
+}
+.request-form button{
+    border: none;
+    width: 30%;
+    margin: 10px;
+    padding:15px;
+    background-color: #FF6464;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 4px 10px -3px rgb(255, 97, 97);
+    outline:none;
+}
+
+.request-form button:focus{
+    outline:none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-link{
+        width: 100%;
+    }
+    .ham{
+        display: flex;
+        height: 30px;
+        width: auto;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+    .stats #stats{
+        font-size: 45px;
+    }
+    .search{
+        width: 80%;
+    }
+    .corona{
+        width: 100%;
+    }
+    .request-form{
+        width: 90%;
+    }
+    .inn,.inn-in{
+        flex-direction: column;
+    }
+    .user-info{
+        width: 100%;
+    }
+    .user{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .card-link{
+        width: 43%;
+    }
+    
+}
